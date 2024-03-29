@@ -46,7 +46,6 @@ rl.on("line", (line) => {
     }
   } catch (error) {
     console.error(error);
-    // throw new Error(error);
   }
 });
 
