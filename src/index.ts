@@ -73,7 +73,7 @@ const evaluateExpression = (expression: string): string => {
     );
   });
 
-  return eval(expression);
+  return new Function("return " + expression)();
 };
 
 const sanatiseItem = (item: string, regex: RegExp): string => {
